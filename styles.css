@@ -1,0 +1,145 @@
+html, body{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: lightsalmon;
+    display: block;
+    margin: 0;
+}
+
+nav, footer{
+    background-color: teal;
+    padding-top: 1rem;
+}
+
+ul{
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+li{
+    display: inline-block;
+    margin-right: 1.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+a:-webkit-any-link {
+    color: lightsalmon;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.intro{
+    height: 30rem;
+    padding-top: 1rem;
+}
+
+.intro h1{
+    color: coral;
+    font-size: 2rem;
+    margin-top: 10rem;
+    padding: 2rem;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    text-align: center;
+}
+
+.summary, .testimonial, .photos, .join{
+    margin: 4rem auto;
+}
+
+.summary{
+    padding: 0 1rem;
+}
+
+.summary h2{
+    color: yellow;
+}
+
+.summary p{
+    color: white;
+}
+
+.photos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.photos img{
+    width: 30%;
+}
+
+.testimonial {
+    background-color: teal;
+    height: 20rem;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    color: yellow;
+}
+
+.join {
+    margin-bottom: 2rem;
+}
+  
+.join img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+  
+.join h1 {
+    color: yellow;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1048px) {
+    .photos{
+        display: block;
+    }
+
+    .photos img{
+        width: 100%;
+        margin: auto;
+        
+    }
+}    
+
+@media only screen and (max-width: 640px) {
+    .intro h1 {
+      margin-top: 2rem;
+    }
+  
+    .intro {
+      max-height: 200px;
+    }
+
+    .photos{
+        display: block;
+    }
+
+    .photos img{
+        width: 100%;
+        margin: 1rem;
+    }
+  
+    li {
+      display: block;
+      text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .testimonial h1 {
+      font-size: 2rem;
+    }
+  
+    .photos{
+        display: block;
+    }
+
+    .photos img{
+        width: 100%;
+        margin: 1rem;
+    }
+  }
